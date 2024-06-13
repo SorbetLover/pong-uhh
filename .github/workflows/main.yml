@@ -15,9 +15,9 @@ jobs:
       with:
         haxe-version: stable
         flixel-versions: release
-        target: html5
+        target: windows
     - name: Build
-      run: haxelib run lime build html5 -final
+      run: haxelib run lime build windows -final
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
