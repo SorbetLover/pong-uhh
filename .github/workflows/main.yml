@@ -25,9 +25,6 @@ jobs:
             export/release/windows/obj/
           restore-keys: |
             cache-build-windows
-      - name: Installing/Updating libraries
-        run: |
-          haxe -cp commandline -D analyzer-optimize --run Main setup
       - name: Building the game
         run: |
           haxelib run lime build windows
